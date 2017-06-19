@@ -1,0 +1,188 @@
+body{
+	font-family: "Microsoft YaHei,HiraginoSansGB";
+}
+.title {
+  width: 25rem;
+  height: 2.53333333rem;
+  line-height: 2.53333333rem;
+}
+.title i {
+  display: inline-block;
+  width: 0.7rem;
+  height: 1.2rem;
+  background: url(com-img/bc.png) no-repeat;
+  background-size: cover;
+  margin-left: 1.13333333rem;
+}
+.title span {
+  font-size: 1.13333333rem;
+  color: #333333;
+  position: absolute;
+  left: 10.3rem;
+}
+.time {
+  width: 25rem;
+  height: 3.1rem;
+}
+.time li {
+  float: left;
+  width: 20%;
+  height: 3rem;
+  border-top: 1px solid #dddfde;
+  border-bottom: 1px solid #dddfde;
+  text-align: center;
+  position: relative;
+  background: #a0a0a0;
+  cursor: pointer;
+}
+.time li a {
+  display: inline-block;
+}
+.time li time,
+.time li span {
+  display: block;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #ffffff;
+}
+.time li time {
+  font-size: 0.86666667rem;
+  line-height: 1.3rem;
+  padding: 0.1rem 0;
+}
+.time li i {
+  display: none;
+  width: 0;
+  height: 0;
+  border: 0.53333333rem solid transparent;
+  border-top-color: #fb4a4c;
+  position: absolute;
+  bottom: -1rem;
+  left: 40%;
+}
+.time .active {
+  border-top-color: #fb4a4c;
+  background-color: #fb4a4c;
+}
+.time .active i {
+  display: block;
+}
+.clock {
+  width: 100%;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  font-size: 0.93333333rem;
+  color: #333333;
+  border-bottom: 1px solid #dddfde;
+}
+.clock span {
+  float: left;
+  width: 12rem;
+}
+.clock em {
+  margin: 0 0.7rem 0 1.1rem;
+}
+.clock time {
+  margin: 0.3rem;
+}
+.clock a {
+  float: right;
+  width: 5rem;
+  color: #666;
+}
+.content {
+  width: 100%;
+  background-color: #eff1f0;
+  padding-top: 0.43333333rem;
+}
+.content li {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #dddfde;
+  margin-bottom: 0.43333333rem;
+}
+.content a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: 1.2rem 0.6rem 1.4rem 0.66666667rem;
+  box-sizing: border-box;
+}
+.content img {
+  float: left;
+  width: 5.16666667rem;
+  height: 6.1rem;
+  margin-right: 2.1rem;
+}
+.content span {
+  float: right;
+  width: 16.46666667rem;
+  font-size: 0.86666667rem;
+  position: relative;
+}
+.content .content-title {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333333;
+  margin:0.2rem 0 0.4rem;
+}
+.content em {
+  display: block;
+  color: #999999;
+  margin-bottom: 0.8rem;
+}
+.content em b {
+  text-decoration: line-through;
+}
+.content em strong {
+  font-size: 30px;
+  color: #f84c51;
+}
+.Store {
+  display: block;
+  position: relative;
+  height: 1.93333333rem;
+}
+.Store mark:nth-of-type(1) {
+  width: 5.86666667rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  text-align: center ;
+  border: 1px solid #fb4a4c;
+  border-radius: 0.53333333rem;
+  position: absolute;
+  top: 0.43333333rem;
+  left: 0;
+  font-size: 0.73333333rem;
+  color: #fb4a4c;
+}
+.Store mark:nth-of-type(1) i {
+  width: 4.1rem;
+  height: 1.1rem;
+  border-radius: 0.53333333rem;
+  background-color: rgba(251, 74, 76, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tip mark:nth-of-type(1) {
+ border: none;
+ text-align: left;
+}
+.Store mark:nth-of-type(2) {
+  border-radius: 5px;
+  background-color: #fb4a4c;
+  width: 5.4rem;
+  height: 1.96666667rem;
+  line-height: 1.96666667rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/seckill.css"/>
+	</head>
+	<body>
+		<div class="title">
+			<a href="#"><i></i></a>
+			<span>限时秒杀</span>
+		</div>
+		<ul id="time" class="time ClearFix">
+			<li>
+				<a href="#">
+					<time>14:00</time>
+					<span>已开抢</span>
+					<i></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<time>16:00</time><span>已开抢</span><i></i>
+				</a>
+			</li>
+			<li class="active">
+				<a href="#">
+					<time>18:00</time><span>抢购中</span><i></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<time>20:00</time><span>即将开始</span><i></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<time>21:00</time>
+					<span>即将开始</span>
+					<i></i>
+				</a>
+			</li>
+		</ul>
+		<div class="clock">
+			<span><em>距本场结束</em><time>00</time>:<time>14</time>:<time>42</time></span>
+			<a href="#">活动规则&nbsp;&gt;</a>
+		</div>
+		<ul class="content">
+			<li>
+				<a href="#">
+					<img src="imags/img1.png"/>
+					<span>
+						<strong class="content-title">Mistine 24小时持久不脱妆粉底液</strong>
+						<em>好用的粉底</em>
+						<em>
+							<strong>¥55</strong>
+							<b>¥98</b>
+						</em>
+						<strong class="Store">
+							<mark><i></i>仅剩349</mark>
+							<mark>马上抢</mark>
+						</strong>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="imags/img2.png"/>
+					<span>
+						<strong class="content-title">The Saem 得鲜 生态地球能量日常防晒套装</strong>
+						<em>独家代理 品质保证</em>
+						<em>
+							<strong>¥75</strong>
+							<b>¥98</b>
+						</em>
+						<strong class="Store tip">
+							<mark>限量800件</mark>
+							<mark>提醒我</mark>
+						</strong>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="imags/img1.png"/>
+					<span>
+						<strong class="content-title">Mistine 24小时持久不脱妆粉底液</strong>
+						<em>好用的粉底</em>
+						<em>
+							<strong>¥55</strong>
+							<b>¥98</b>
+						</em>
+						<strong class="Store">
+							<mark><i></i>仅剩349</mark>
+							<mark>马上抢</mark>
+						</strong>
+					</span>
+				</a>
+			</li>
+		</ul>
+		
+		
+		
+		<script>
+			var html = document.documentElement;
+			var htmlWidth = html.getBoundingClientRect().width;
+			html.style.fontSize = htmlWidth/25+"px";
+			
+			var oTime =document.getElementById('time');
+			var oLi = oTime.getElementsByTagName('li');
+			var onOff =true;
+			
+			for (var i=0; i<oLi.length; i++) {
+				oLi[i].onclick = function (){
+					for(i = 0; i < oLi.length; i++)   oLi[i].className = oLi[i].className.replace(/\s?active/, "");
+					this.className += " active";
+					
+				};
+				
+			}
+		</script>
+	</body>
+</html>
