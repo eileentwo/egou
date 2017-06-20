@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+
+		<script>
+		    (function(){
+		    	var html = document.documentElement;
+		    	var htmlWidth = html.getBoundingClientRect().width;
+		    	html.style.fontSize = htmlWidth/25 +"px";
+		    })()
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<a class="return"><img src="img/return.png"/></a>
+			<a class="share"><img src="img/icon.png"/></a>
+		</div>
+		<header class="banks">
+			<div class="div1" id="div1">
+				<a href="javascript:;">
+			    	<img src="imags/1.png"/>
+			    	<img src="imags/1bg50jr9n82_300_300.jpg"/>
+			    	<img src="imags/1.png"/>
+			    	<img src="imags/1bg50jr9n82_300_300.jpg"/>
+			    </a>
+			    <ul>
+			    	<li></li>
+			    	<li></li>
+			    	<li></li>
+			    	<li></li>
+			    </ul>
+			</div>
+		</header>
+		<script>
+		    var oDiv = document.getElementById("div1");
+		    var oLi = oDiv.getElementsByTagName("li");
+		    var oImg = oDiv.getElementsByTagName('img');
+		    var ab = 0; 
+		    
+		    window.onload = function () {
+		    	 for (var i=0;i<oLi.length;i++){
+		            if (i!=0){
+		            oImg[i].style.opacity = 0;
+		            }else {
+		                oLi[i].style.backgroundColor = "white";
+		            }
+		        };
+		    };
+		    function bb() {
+			     for (var j=0;j<oLi.length;j++) {
+			         oLi[j].onmouseover = function () {
+			             var index = this.innerHTML - 1;
+			             ab = index; 
+			             for (var b = 0; b < oLi.length; b++) {
+			                if (b == index) {
+			                     oImg[b].style.opacity = 100;
+			                     oImg[b].style.transition = "opacity 1s";
+			                     oLi[b].style.backgroundColor = "white";
+			                 } else { 
+			                     oImg[b].style.opacity = 0;
+			                     oLi[b].style.backgroundColor = "#e0e0e0";
+			                 }
+			             }
+			             return ab; 
+			         }
+			
+			     };
+		    setInterval(function ac() { 
+		      	ab = ab>oLi.length-2?0:++ab; 
+		                for (var b = 0; b < oLi.length; b++) {
+		                    if (b == ab) {
+		                        oImg[b].style.opacity = 100;
+		                        oImg[b].style.transition = "opacity 1s";
+		                        oLi[b].style.backgroundColor = "white";
+		                    } else {
+		                        oImg[b].style.opacity = 0;
+		                        oLi[b].style.backgroundColor = "#e0e0e0";
+		                    }
+		                }
+		            },2000);
+		    }
+		    bb(); 
+		   
+		</script>
+		<!--轮播图部分结束-->
+		<div class="countDown">
+			<div class="countDownLeft">
+				<div>限时特卖</div>
+				<p><i></i></p>
+			</div>
+			<div class="countDownRight">
+				<span>距结束</span>
+				<em>13</em>:
+				<em>43</em>:
+				<em>37</em>
+			</div>
+		</div>
+		<div class="price">
+			<span>¥<strong>1099</strong></span>
+			<em>¥2600</em>
+		</div>
+		<div class="controduce">
+			<div class="controduceTitle">Beats&nbsp;Solo2&nbsp;通用重低音音乐耳麦&nbsp;&nbsp;&nbsp;&nbsp;有线耳机头戴式</div>
+			<p>
+				<em><i></i>海外商品</em>
+				<em><i></i>原产地美国</em>
+			</p>
+		</div>
+		<section>
+			<div class="address">
+				<a class="container" href="#">
+					<span>配送至：
+						<em>天津</em>
+						<em>河东区</em>
+					</span>
+					<i>&gt;</i>
+				</a>
+				<a  class="container" href="#">运费：
+					<em>19</em>.00元
+				</a>
+				<a  class="container declare" href="#">
+					<span>说明:</span>
+					<span>
+						<em>税率：11.9%</em>
+						<em>支持7天无理由退货</em>
+						<em>海外直邮购</em>
+					</span>
+					<span>&gt;</span>
+				</a>
+				<!--商品详情页面-->
+				<div class="Declare Fix">
+					<div class="Declareinner">
+						<div class="DeclareTitle">
+							<span>商品说明</span>
+							<i><img src="img/close.png"/></i>
+						</div>
+						<dl>
+							<dt>商品税费</dt>
+							<dd>据国家政策规定，本商品适用于“跨境综合税”，实际结算税费请以提交订单时的应付总额明细为准.</dd>
+							<dt>假一赔十</dt>
+							<dd>易购德每一件商品都通过严苛的品质把关，保障正品，保障品质。特推出“假一赔十”的正品保障政策，杜绝一切假货，让您无忧购物.</dd>
+							<dt>7天无忧退货</dt>
+							<dd>收到商品之日起7天（含）内如有商品质量问题或溢漏损失缺发等可申请售后进行退货.</dd>
+							<dt>自营保税仓发货</dt>
+							<dd>本商品由自营保税仓发货.</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="Declare Fix">
+					<div class="Declareinner">
+						<div class="Adds">
+							<ul class="DeclareTitle">
+								<li class="choice">省份</li>
+								<li>城市</li>
+								<li>区域</li>
+							</ul>
+							<div>
+								<ul class="province">
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+								</ul>
+								<ul class="city Fix">
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+								</ul>
+								<ul class="area Fix">
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+									<li>吉林省</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="publicPraise">
+				<a  class="container" href="#">
+					<span>商品口碑&nbsp;(655)</span>
+					<i>查看全部&nbsp;&gt;</i>
+				</a>
+				<a  class="container Praise" href="#">
+					<strong><img src="imags/h.png"/><em>王****</em></strong>
+					<strong>质量很好 音质真的很棒 卖家客服服务态度很好 有问题直接解决 果断好评 而且还送了手机壳 很好</strong>
+					<img src="imags/c1.png"/>
+				</a>
+			</div>
+			<div class="commodity">
+				<div  class="container">
+					<div class="commodityTitle">
+						<a href="#">
+							<img src="imags/shop.png"/>
+							<span>
+								<strong>Beats Solo</strong>
+								<em>在售商品<i>30</i>件</em>
+							</span>
+							<span><i>进入品牌</i></span>
+						</a>
+					</div>
+					<ul class="ClearFix">
+						<li>
+							<a href="#">
+								<img src="imags/s1.png" alt="" />
+								<em>Beats Tour2.5 面条带线控入... </em>
+								<strong>¥998</strong>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="imags/s2.png" alt="" />
+								<em>TBeats URBEATS  重低音耳塞式手机... </em>
+								<strong>¥788</strong>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="imags/s3.png" alt="" />
+								<em>Beats Power s3 by Dr. Dre </em>
+								<strong>¥1488</strong>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pull">
+				<a href="#"><i></i>上拉查看图文详情</a>
+			</div>
+		</section>
+		<footer>
+			<a href="#">
+				<i></i>
+				<span>收藏</span>
+			</a>
+			<a href="#">
+				<i></i>
+				<span>购物车</span>
+			</a>
+			<a href="#">加入购物车</a>
+			<a href="#">立即购买</a>
+		</footer>
+	</body>
+</html>

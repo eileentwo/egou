@@ -66,3 +66,6 @@ img {
 	border: 0;
 	vertical-align: top;
 }
+a:hover {
+	text-decoration: none;
+}

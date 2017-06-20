@@ -1,0 +1,35 @@
+.head {
+  border-bottom: 1px solid #ececec;
+}
+.head span {
+  width: 4.73333333rem;
+  color: #333;
+  position: absolute;
+  top: 0.63333333rem;
+  left: 50%;
+  transform: translateX(-2.36666667rem);
+}
+.section {
+  height: 2.1rem;
+  line-height: 2.1rem;
+  margin: 0.86666667rem 0.53333333rem;
+  border-radius: 0.23333333rem;
+  border: 2px solid #333;
+}
+.section a {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.section .Active {
+  color: #fff;
+  background-color: #333 ;
+}
+.video img {
+  width: 100%;
+  height: auto;
+}
+ul{
+  height: 2.5rem;
+}
