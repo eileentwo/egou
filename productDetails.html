@@ -5,6 +5,7 @@
 		<title></title>
 		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
 
 		<script>
@@ -19,6 +20,7 @@
 		<div class="head">
 			<a class="return"><img src="img/return.png"/></a>
 			<a class="share"><img src="img/icon.png"/></a>
+			
 		</div>
 		<header class="banks">
 			<div class="div1" id="div1">
@@ -133,8 +135,8 @@
 					<span>&gt;</span>
 				</a>
 				<!--商品详情页面-->
-				<div class="Declare Fix">
-					<div class="Declareinner">
+				<div class="Declare Fix ">
+					<div class="Declareinner illustrate">
 						<div class="DeclareTitle">
 							<span>商品说明</span>
 							<i><img src="img/close.png"/></i>
@@ -151,43 +153,42 @@
 						</dl>
 					</div>
 				</div>
+				<!-- 更换地址 -->
 				<div class="Declare Fix">
-					<div class="Declareinner">
-						<div class="Adds">
-							<ul class="DeclareTitle">
-								<li class="choice">省份</li>
-								<li>城市</li>
-								<li>区域</li>
+					<div class="Declareinner Adds">
+						<ul class="DeclareTitle">
+							<li class="choice">省份</li>
+							<li>城市</li>
+							<li>区域</li>
+						</ul>
+						<div>
+							<ul class="province">
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
 							</ul>
-							<div>
-								<ul class="province">
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-								</ul>
-								<ul class="city Fix">
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-								</ul>
-								<ul class="area Fix">
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-									<li>吉林省</li>
-								</ul>
-							</div>
+							<ul class="city Fix">
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+							</ul>
+							<ul class="area Fix">
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+								<li>吉林省</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -255,6 +256,100 @@
 			</a>
 			<a href="#">加入购物车</a>
 			<a href="#">立即购买</a>
+			<!-- 支付页面 -->
+			<div class="Declare Fix">
+				<div class="Declareinner pay">
+					<div class="payDetails">
+						<span>请在72小时内完成支付</span><i>¥299</i>
+					</div>
+					<input type="radio" id="alipay">
+					<label for="alipay" class="payDetails">
+						<img src="img/alipay.png"/>支付宝 <i></i>
+					</label>
+					<input type="radio" id="WeChat">
+					<label for="WeChat" class="payDetails">
+						<img src="img/wechat.png"/>微信支付（推荐）<i></i>
+					</label>
+					<div class="Pay">
+						<a href="#">确定支付</a>
+					</div>
+				</div>
+			</div>
+			<div class="Declare Fix">
+				<div class="Declareinner Buy">
+					<div>
+						<span>¥48.5</span>
+						<i>X</i>
+					</div>
+					<div class="number">
+						<span>数量</span>
+						<em>
+							<input type="button" name="" id="btn1" value="-" />
+							<input type="text" name="text" id="text" placeholder="2" />
+							<input type="button" name="" id="btn2" value="+" />
+						</em>
+					</div>
+					<div>
+						<a href="#">加入购物车</a><a href="#">立即购买</a>
+					</div>
+				</div> 
+			</div>
+			<script type="text/javascript">
+				window.onload = function() {
+					var oBtn1 = document.getElementById('btn1');
+					var oBtn2 = document.getElementById('btn2');
+					var oText = document.getElementById('text');
+					
+					var num =2;
+					
+					oBtn2.onclick = function (){
+						num ++;	
+						if (num==0){
+							oText.placeholder = num+1;
+						}else {
+							oText.placeholder = num;
+						}
+						
+					};
+					oBtn1.onclick = function (){
+						num --;
+						if (num<0) {
+							oText.placeholder =0;
+						}else {
+							oText.placeholder = oText.placeholder-1;
+						};
+					};
+				};
+		</script>
+		<!--分享页面-->
+		<div class="Declare Fix">
+				<div class="Declareinner Sharing">
+					<div>分享到</div>
+					<ul class="ClearFix">
+						<li>
+							<span><img src="img/we.png"/></span>
+							<em>微信</em>
+						</li>
+						<li>
+							<span><img src="img/f.png"/></span>
+							<em>朋友圈</em>
+						</li>
+						<li>
+							<span><img src="img/zone.png"/></span>
+							<em>QQ空间</em>
+						</li>
+						<li>
+							<span><img src="img/qq.png"/></span>
+							<em>QQ好友</em>
+						</li>
+						<li>
+							<span><img src="img/wb.png"/></span>
+							<em>微博</em>
+						</li>
+					</ul>
+					<p>取消</p>
+				</div> 
+			</div>
 		</footer>
 	</body>
 </html>

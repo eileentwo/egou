@@ -1,0 +1,9 @@
+
+.head a:nth-of-type(1):before{
+  content: "\f104";
+  left: 0.86666667rem;
+}
+.head a:nth-of-type(2):before {
+  content: "\f14d";
+  right: 0.96666667rem;
+}

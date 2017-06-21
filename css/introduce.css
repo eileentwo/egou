@@ -1,20 +1,28 @@
-.head {
-  border-bottom: 1px solid #ececec;
+.head a {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
 }
-.head span {
-  width: 4.73333333rem;
-  color: #333;
-  position: absolute;
-  top: 0.63333333rem;
-  left: 50%;
-  transform: translateX(-2.36666667rem);
+.reading a {
+  background-color: transparent;
+  top:10%;
+}
+.reading a:nth-of-type(1):before{
+  content: "\f104";
+  left: 0.86666667rem;
+}
+.reading a:nth-of-type(2):before {
+  content: "\f14d";
+  right: 0.96666667rem;
 }
 .section {
   height: 2.1rem;
   line-height: 2.1rem;
   margin: 0.86666667rem 0.53333333rem;
   border-radius: 0.23333333rem;
-  border: 2px solid #333;
+  border: 0.06666667rem solid #333333;
 }
 .section a {
   float: left;
@@ -30,6 +38,160 @@
   width: 100%;
   height: auto;
 }
-ul{
+ul {
   height: 2.5rem;
+}
+
+.content {
+  padding: 0 1.5rem;
+  font-size: 0.76666667rem;
+  color: #4e4e4e;
+}
+
+
+.content dt {
+	text-align: center;
+	color: #ff4900;
+	margin:  1.4rem 0.6rem;
+}
+
+.content dt div {
+	width: 1.63333333rem;
+	height: 1.63333333rem;
+	margin: 0 auto 0.333rem;
+}
+.content dt:nth-of-type(1) div {
+	background: url(../img/reading1.png) no-repeat;
+	background-size: cover;
+}
+.content dt:nth-of-type(2) div {
+	background: url(../img/reading2.png) no-repeat;
+	background-size: cover;
+}
+.content dt:nth-of-type(3) div {
+	background: url(../img/reading3.png) no-repeat;
+	background-size: cover;
+}
+.content dt:nth-of-type(4) div {
+	background: url(../img/reading4.png) no-repeat;
+	background-size: cover;
+}
+.content dt:nth-of-type(5) div {
+	background: url(../img/reading5.png) no-repeat;
+	background-size: cover;
+}
+
+.content dt p {
+	font-size: 0.866667rem;
+	line-height: 1;
+	position: relative;
+}
+.content dt span {
+	padding: 0 0.466667rem;
+	background-color: #fff;
+	position: relative;
+	z-index: 99;
+}
+.content dt strong {
+	width: 1px;
+	height: 22rem;
+	background: no-repeat linear-gradient(
+				#fff 0%,
+				#fe5001 10%,
+				#fe5001 90%,
+				#fff 100%
+			);
+	transform: rotate(90deg);
+	position: absolute;
+	top:-10.3333rem;
+	left: 11rem;
+}
+
+.content dd {
+	line-height: 1.1rem;
+}
+
+/*评价列表evaluation*/
+.wrap {
+	width: 100%;
+	background-color: #f0f0f0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.wrap  .head {
+	background-color: #fff;
+}
+.favorableRate {
+	line-height: 4.23333333rem;
+	text-indent: 1.0666rem;
+	border-bottom: 1px solid #dddbdc;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.favorableRate strong {
+	float: left;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #333;
+	margin-right: 0.7333rem;
+}
+
+.favorableRate span {
+	float: left;
+	width: 5.9333rem;
+	font-size: 0.8rem;
+	color: #808080;
+	margin-top: 1.2rem;
+}
+
+.favorableRate span em {
+	display: block;
+	line-height: 1rem;
+}
+
+.favorableRate>em {
+	float: left;
+}
+
+.favorableRate i:before {
+  content: "\f005";
+  font-size: 1.43333rem;
+  color: #ffbd17;
+}
+
+.favorableRate i:nth-of-type(5):before{
+  content: "\f123";
+}
+
+.evaSection {    
+	width: 100%;
+  height: 15rem;
+  line-height: 1.13333333rem;
+  padding: 0.46666667rem  0.83333333rem  0.93333333rem;
+	background-color: #fff;
+	margin-top: 0.3333rem;
+	font-size: 0.8rem;
+    color: #646464;
+  box-sizing: border-box;
+	
+}
+
+.evaSection strong {
+	display: block;
+}
+
+.evaSection strong img {
+		border-radius: 48%;
+    margin: 0 0.9rem 0.4rem 0;
+    vertical-align: middle;
+}
+.evaSection>img {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-top: 0.4rem;
 }
