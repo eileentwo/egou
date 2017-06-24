@@ -1,0 +1,182 @@
+body {
+  background-color: #eee;
+}
+.Fix {
+  display: none;
+}
+.container {
+  width: 100%;
+  padding: 0.8rem 0.83333333rem;
+  font-size: 0.93333333rem;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  color: #666;
+  background-color: #fff;
+}
+.head a {
+  width: 2em;
+  background-color: transparent;
+  color: #666;
+  top: 0;
+}
+.head a:nth-of-type(1):before {
+  content: "\f104";
+  font-size: 1.33333333rem;
+  left: 0;
+}
+.head a:nth-of-type(2) {
+  top: 30%;
+}
+.consignee-information input {
+  border: none;
+  width: 100%;
+  font-size: 0.93333333rem;
+}
+.acquiescent {
+  overflow: hidden;
+}
+.acquiescent label {
+  float: right;
+  width: 2.9rem;
+  height: 1.66666667rem;
+  border: 2px solid #eee;
+  border-radius: 27px;
+  position: relative;
+}
+.acquiescent input {
+  float: left;
+  width: 20rem;
+}
+.acquiescent input:nth-of-type(2) {
+  display: none;
+}
+.acquiescent span {
+  width: 1.66666667rem;
+  height: 1.66666667rem;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+}
+.ID-card span {
+  float: left;
+  width: 11.26666667rem;
+  height: 10.7rem;
+  padding-top: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+.ID-card span:nth-of-type(2) {
+  float: right;
+}
+.ID-card img {
+  width: 11.26666667rem;
+  height: 7.1rem;
+  margin-bottom: 1.4rem;
+  border-radius: 0.3rem;
+}
+.ID-card dd {
+  background-color: #fff;
+  margin-bottom: 0.6rem;
+  padding: 0 0.8rem;
+  font-size: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ID-card dd div {
+  font-size: 0.86666667rem;
+  line-height: 1.93333333rem;
+  padding-top: 0.4rem;
+}
+.ID-card dd i {
+  display: inline-block;
+  width: 1.13333333rem;
+  height: 1.13333333rem;
+  background-image: url(../img/Qmark.png);
+  background-size: cover;
+  margin-right: 0.66666667rem;
+}
+.ID-card dd p {
+  padding-left: 1.8rem;
+  line-height: 1.06666667rem;
+}
+.ID-card dd p:nth-of-type(3) {
+  padding-bottom: 0.66666667rem;
+  color: #fb4a4c;
+  margin-bottom: 4.8rem;
+}
+.ID-card .Id-details {
+  margin-right: -0.6rem;
+}
+.ID-card a {
+  width: 4.2rem;
+  height: 1.56666667rem;
+  line-height: 1.56666667rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 0.8rem;
+  transform: translateX(-2.1rem);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  z-index: 9999;
+}
+.ID-card mark {
+  width: 11.26666667rem;
+  height: 7.1rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  z-index: 999;
+}
+.save {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.save a {
+  display: inline-block;
+  width: 23.33333333rem;
+  height: 2.46666667rem;
+  line-height: 2.46666667rem;
+  text-align: center;
+  background-color: #fb4a4c;
+  color: #fff;
+  border-radius: 0.26666667rem;
+}
+.Consignee li {
+  position: relative;
+  font-size: 0.86666667rem;
+}
+.Consignee li div em {
+  color: #666;
+}
+.Consignee li a:before {
+  content: "\f044";
+  position: absolute;
+  top: 1.7rem;
+  right: 0.83333333rem;
+}
+.Consignee li span {
+  display: inline-block;
+  width: 1.93333333rem;
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
+  font-size: 0.8rem;
+  border: 1px solid #fb4a4c;
+  color: #fb4a4c;
+  border-radius: 0.1rem;
+  text-align: center;
+  margin-right: -2.5em;
+}
+.Consignee li p {
+  color: #999;
+  line-height: 1.33333333rem;
+}
+.Consignee li p em {
+  margin-left: 3.5em ;
+}

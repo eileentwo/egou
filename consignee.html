@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/consignee.css"/>
+		<script>
+		    (function(){
+		    	var html = document.documentElement;
+		    	var htmlWidth = html.getBoundingClientRect().width;
+		    	html.style.fontSize = htmlWidth/25 +"px";
+		    })()
+		</script>
+	</head>
+	<body>
+		<div class="head container">
+			<a class="return"></a>
+			<span>收件人信息</span>
+			<span class="Fix">收货管理</span>
+			<a href="#">删除</a>
+		</div>
+		<ul class="consignee-information ">
+			<li class="container">
+				<input type="text" placeholder="姓名" />
+			</li>
+			<li class="container">
+				<input type="text" placeholder="手机号码" />
+			</li>
+			<li class="container">
+				<input type="text" placeholder="省份、城市、区县" />
+			</li>
+			<li class="container">
+				<input type="text" placeholder="详细地址，如街道、楼牌号等" />
+			</li>
+			<li class="acquiescent container">
+				<input type="text" placeholder="详细地址，如街道、楼牌号等" />
+				<input type="radio" id="Radio"/>
+				<label for="Radio">
+					<span></span>
+				</label>
+			</li>
+		</ul>
+		<ul class="Consignee Fix">
+			<li class="container">
+				<div>
+					<em>陈伟霆</em>
+					<em>13141138098</em>
+				</div>
+				<p>
+					<span>默认</span>
+					<em>广东省韶关市曲江区联航路2165弄24号301室</em>
+					<a href="#"></a>
+				</p>
+			</li>
+			<li class="container">
+				<div>
+					<em>陈伟霆</em>
+					<em>13141138098</em>
+				</div>
+				<p>
+					<em>广东省韶关市曲江区联航路2165弄24号301室</em>
+					<a href="#"></a>
+				</p>
+			</li>
+		</ul>
+		<dl class="ID-card ">
+			<dt class="container">身份证号</dt>
+			<dd class="ClearFix Id-details">
+				<span>
+					<img src="imags/id1.png"/>
+					<em>身份证正面照</em>
+					<mark></mark>
+					<a href="#">上传</a>
+				</span>
+				<span>
+					<img src="imags/id2.png"/>
+					<em>身份证反面照</em>
+					<mark></mark>
+					<a href="#">上传</a>
+				</span>
+			</dd>
+			<dd>
+				<div><i></i>为什么需要上传身份证</div>
+				<p>根据海关规定，购买跨境商品需实名认证，以确保商品通过海关检查。 本方承诺所传身份证只用于办理跨境商品的清关手续，不作他途使用，</p>
+				<p>根据海关规定，购买跨境商品需实名认证，以确保商品通过海关检查。 本方承诺所传身份证只用于办理跨境商品的清关手续，不作他途使用，</p>
+				<p>如果上传身份证照片不清晰，可能会被海关拒绝清关，请您仔细检查。</p>
+			</dd>
+		</dl>
+		<div class="save container">
+			<a href="#">保存</a>
+			<a href="#" style="display: none;" >添加收件人</a>
+		</div>
+	</body>
+</html>

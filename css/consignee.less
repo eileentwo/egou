@@ -1,0 +1,191 @@
+@r:30rem;
+body {
+    background-color: #eee;
+}
+.Fix {
+    display: none;
+}
+.container {
+    width: 100%;
+    padding: 24/@r 25/@r;
+    font-size: 28/@r;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    color:#666;
+    background-color: #fff;
+}
+.head a {
+    width: 2em;
+    background-color: transparent;
+    color:#666;
+    top: 0;
+}
+.head a:nth-of-type(1):before {
+  content: "\f104";
+  font-size: 40/@r;
+  left: 0;
+}
+
+.head a:nth-of-type(2) {
+    top: 30%;
+}
+.consignee-information input {
+    border: none;
+    width: 100%;
+    font-size: 28/@r;
+}
+.acquiescent {
+    overflow: hidden;
+    label {
+        float: right;
+        width: 87/@r;
+        height: 50/@r;
+        border: 2px solid #eee;
+        border-radius: 27px;
+        position: relative;
+    }
+     input {
+         float: left;
+         width: 600/@r;
+     }
+     input:nth-of-type(2) {
+    display: none;
+    }
+    span {
+        width: 50/@r;
+        height: 50/@r;
+        border: 2px solid #eee;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        left: -3px;
+    }
+}
+
+.ID-card {
+    span {
+        float: left;
+        width: 338/@r;
+        height: 321/@r;
+        padding-top: 48/@r;
+        text-align: center;
+       position: relative;
+    }
+    
+    span:nth-of-type(2){
+        float: right;
+    }
+    img {
+        width: 338/@r;
+        height: 213/@r;
+        margin-bottom: 42/@r;
+        border-radius: 9/@r;
+    }
+    dd {
+    background-color: #fff;
+    margin-bottom: 18/@r;
+    padding: 0 24/@r;
+    font-size: 24/@r;
+    width: 100%;
+    box-sizing: border-box;
+    
+    div {
+        font-size: 26/@r;
+        line-height:58/@r ;
+        padding-top: 12/@r;
+    }
+    i {
+        display: inline-block;
+        width: 34/@r;
+        height: 34/@r;
+        background-image: url(../img/Qmark.png);
+        background-size: cover;
+        margin-right: 20/@r;
+    }
+    p {
+        padding-left: 54/@r;
+        line-height: 32/@r;
+    }
+    p:nth-of-type(3) {
+        padding-bottom: 20/@r;
+        color: #fb4a4c;
+        margin-bottom: 4.8rem;
+    }
+    }
+   .Id-details {
+       margin-right: -18/@r;
+   }
+   a {
+       width: 126/@r;
+       height: 47/@r;
+       line-height: 47/@r;
+       text-align: center;
+       background: rgba(0,0,0,0.3);
+       color: #fff;
+       border-radius: 24/@r;
+       transform: translateX(-63/@r);
+       position: absolute;
+       top: 35%;
+       left: 50%;
+       z-index: 9999;
+   }
+   mark {
+        width: 338/@r;
+        height: 213/@r;
+       background: rgba(0,0,0,0.1);
+        border-radius: 9/@r;
+        position: absolute;
+        top: 48/@r;
+        left: 0;
+        z-index: 999;
+   }
+   
+}
+.save {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.save a {
+    display: inline-block;
+    width: 700/@r;
+    height: 74/@r;
+    line-height: 74/@r;
+    text-align: center;
+    background-color: #fb4a4c;
+    color: #fff;
+    border-radius: 8/@r;
+}
+.Consignee li {   
+    position: relative;
+    font-size: 26/@r;
+    
+    div em {
+        color: #666;
+    }
+    a:before {
+        content: "\f044";
+        position: absolute;
+        top: 51/@r;
+        right: 25/@r;
+    }
+    span {
+        display: inline-block;
+        width: 58/@r;
+        height: 28/@r;
+        line-height: 28/@r;
+        font-size: 24/@r;
+        border: 1px solid #fb4a4c;
+        color: #fb4a4c;
+        border-radius: 3/@r;
+        text-align: center;
+        margin-right: -2.5em;
+    }
+    p {
+        color: #999;
+        line-height: 40/@r;
+        em {
+            margin-left:3.5em ;
+        }
+    }
+ }
