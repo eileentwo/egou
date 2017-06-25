@@ -254,10 +254,10 @@
 				<i></i>
 				<span>购物车</span>
 			</a>
-			<a href="#">加入购物车</a>
-			<a href="#">立即购买</a>
+			<a href="#" id="btn-buy">加入购物车</a>
+			<a href="#" class="btn-buy">立即购买</a>
 			<!-- 支付页面 -->
-			<div class="Declare Fix">
+			<div class="Declare Fix show-pay">
 				<div class="Declareinner pay">
 					<div class="payDetails">
 						<span>请在72小时内完成支付</span><i>¥299</i>
@@ -275,11 +275,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="Declare Fix">
+			<div class="Declare Fix" id="buy-details">
 				<div class="Declareinner Buy">
 					<div>
 						<span>¥48.5</span>
-						<i>X</i>
+						<i class="close">X</i>
 					</div>
 					<div class="number">
 						<span>数量</span>
@@ -352,4 +352,41 @@
 			</div>
 		</footer>
 	</body>
+	<script type="text/javascript" src="js/plugs/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/plugs/layer_mobile/layer.js"></script>
+	<script type="text/javascript">
+			$(function(){
+				$(".btn-buy").click(function(){
+					  //页面层
+					  layer.open({
+					    type: 1
+					    ,content: $('.show-pay').html()
+					    ,anim: 'up'
+					    ,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 200px; padding:10px 0; border:none;'
+					 })   
+				})
+				$("#btn-buy").click(function(){
+					  //页面层
+					  layer.open({
+					    type: 1
+					    ,content: $('#buy-details').html()
+					    ,anim: 'up'
+					    ,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 200px; padding:10px 0; border:none;'
+					
+					})   
+				})
+				$(".close").click(function(){
+					console.log(444)
+					layer.closeAll();
+				})
+				
+			})
+			function close(){
+				$(".close").click(function(){
+					console.log(444)
+					layer.closeAll();
+				})
+			}
+		
+	</script>
 </html>
